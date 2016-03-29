@@ -46,7 +46,7 @@ render = (text, filePath, callback) ->
     return callback(error) if error?
 
     html = sanitize(html)
-    html = resolveImagePaths(html, filePath)
+#    html = resolveImagePaths(html, filePath)
     callback(null, html.trim())
 
 sanitize = (html) ->
